@@ -1,0 +1,237 @@
+.page_slider {
+  margin: 60px 0 0 0;
+}
+.slider_h2 {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  /*overflow: hidden;*/
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin: 36px 0 0 0;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+/*----------------------------------*/
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 580px) {
+  .slider__item {
+  flex-direction: column-reverse;
+  align-items: center;
+  }
+}
+.slider_item_text {
+  display: flex;
+  flex-direction: column;
+  max-width: 387px;
+  padding: 27px 0 0 0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .slider_item_text {
+  max-width: 322px;
+  }
+}
+.slider_item_h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .slider_item_h3 {
+  font-size: 20px;
+  }
+}
+@media (max-width: 580px) {
+  .slider_item_h3 {
+  text-align: center;
+  }
+}
+  .slider_item_p {
+  line-height: 125%;
+  margin: 20px 0 0 0;
+}
+@media (max-width: 580px) {
+  .slider_item_p {
+  text-align: center;
+  }
+}
+.slider_item_size {
+  line-height: 125%;
+  margin: 24px 0 0 0;
+}
+@media (max-width: 580px) {
+  .slider_item_size {
+  text-align: center;
+  }
+}
+.slider_item_price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 24px 0 0 0;
+}
+@media (max-width: 767px) {
+  .slider_item_price {
+  font-size: 20px;
+  }
+}
+@media (max-width: 580px) {
+  .slider_item_price {
+  text-align: center;
+  }
+}
+.slider_item_call {
+  max-width: 285px;
+  min-height: 80px;
+  background: #D89999;
+  border-radius: 40px;
+  line-height: 125%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 94px 0 0 0;
+}
+@media (max-width: 767px) {
+  .slider_item_call {
+    min-height: 60px;
+    max-width: 235px;
+    margin: 75px 0 0 0;
+  }
+}
+@media (max-width: 580px) {
+  .slider_item_call {
+    align-self: center;
+    min-width: 195px;
+    margin: 44px 0 0 0;
+  }
+}
+.slider_item_img {
+  max-width: 100%;
+  height: auto;
+}
+.slider_item_img>img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* кнопки влево и вправо */
+.slider_item_controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 0 0 0;
+}
+
+.slider__control {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  height: 50px; */
+  width: 50px;
+  /*transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.2); */
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide='prev'] {
+  background: url(../img/icon/Arrow_left.svg) no-repeat;
+}
+
+.slider__control[data-slide='next'] {
+  background: url(../img/icon/Arrow_right.svg) no-repeat;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  /* color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.3); */
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide='prev']::before {
+}
+
+.slider__control[data-slide='next']::before {
+}
+
+/* индикаторы */
+/*
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.slider__indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.slider__indicators li.active {
+  background-color: rgba(255, 255, 255, 0.9);
+} */
