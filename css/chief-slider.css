@@ -1,6 +1,11 @@
 .page_slider {
   margin: 60px 0 0 0;
 }
+@media (max-width: 787px) {
+  .page_slider {
+    margin: 48px 0 0 0;
+  }
+}
 .slider_h2 {
   margin: 0;
   font-family: "Playfair Display";
